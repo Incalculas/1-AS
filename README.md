@@ -1,9 +1,12 @@
 # 1-AS
-literally just the answer to my first sem computer science code, questions were made for python
+
+For the course CS1101:
+
+I will upload the solutions I submitted for grading (sometimes with changes made after submission).
+The problems will only be uploaded after the deadline.
+The level of description may vary depending on how committed I am to explain my solution
+This is for archival purposes for myself only, but is made public
+
 PS stands for problem sheet. 
 
-I will upload the solutions I submitted for grading or sometimes with changes made after submission.
-
-The problems will be uploaded only 1 hour after the end of deadline
-
-The level of description may vary depending on how committed I am to explain my solution
+1 in 1-AS stands for this being my first computer science course, A stands for assignment and S stands for solutions.
