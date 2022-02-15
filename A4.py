@@ -1,6 +1,5 @@
 # 1. flattening a nested list structure
-x = [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
-#x = [0, 10, [20, 30], 40, 50, [60, 70,[10,10,[10]], 80], [90, 100,[10,20], 110, 120, [90, 100, 110, 120]]]
+x = [0, 10, [20, 30], 40, 50, [60, 70,[10,10,[10]], 80], [90, 100,[10,20], 110, 120, [90, 100, 110, 120]]]
 y = []
 def flat(a):
     for i in a:
@@ -11,8 +10,6 @@ def flat(a):
 print("original list is:",x)
 flat(x)
 print("flattened list is:",y) 
-
-# the above program was done using recursion, this works for nested lists of any depth. sample nested list to test for cases with more than depth 2 of nested list is commented
 
 print("\n")
 
