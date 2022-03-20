@@ -41,7 +41,7 @@ while True: # to run the program till we get a valid input
         'CCU': 'P', 'CCC': 'P', 'CCA': 'P', 'CCG': 'P',# CC
         'CAU': 'H', 'CAC': 'H', 'CAA': 'Q', 'CAG': 'Q',# CA
         'CGU': 'R', 'CGC': 'R', 'CGA': 'R', 'CGG': 'R',# CG
-        'AUU': 'I', 'AUC': 'I', 'AUA': 'I', 'AUG': ' ',# AU
+        'AUU': 'I', 'AUC': 'I', 'AUA': 'I', 'AUG': 'M',# AU
         'ACU': 'T', 'ACC': 'T', 'ACA': 'T', 'ACG': 'T',# AC
         'AAU': 'N', 'AAC': 'N', 'AAA': 'K', 'AAG': 'K',# AA
         'AGU': 'S', 'AGC': 'S', 'AGA': 'R', 'AGG': 'R',# AG
@@ -63,7 +63,7 @@ while True: # to run the program till we get a valid input
             i += 1
         print('full translation of all codons is:\n',translation,sep='') # prints entire translation including start and stop codon
         print('\n(the 0s represent stop codon and spaces represent start codon)\n') 
-        print('translation from the start codon till stop codon is:\n',translation.split('0')[0].split(' ')[-1],sep='') 
+        print('translation from the start codon till stop codon is:\n',translation.split('0')[0].split('M')[-1],sep='') 
         # prints from the first appearing start codon till the next stop codon
         break
     else: 
