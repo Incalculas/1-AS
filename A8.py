@@ -62,9 +62,17 @@ while True: # to run the program till we get a valid input
             translation += amino.get(codon_amino[i]) # translating the codons into associated amino acids
             i += 1
         print('full translation of all codons is:\n',translation,sep='') # prints entire translation including start and stop codon
-        print('\n(the 0s represent stop codon and spaces represent start codon)\n') 
-        print('translation from the start codon till stop codon is:\n',translation.split('0')[0].split('M')[-1],sep='') 
-        # prints from the first appearing start codon till the next stop codon
+        print('\n(the 0s represent stop codon)\n')
+        if(translation.count('M') < 2 and translation.count('0') <2):
+            print('The translation is:',translation.split('0')[0].split('M')[0])
+        # this covers "normal" cases with only 1 stop and 1 start codon at max
+        else:
+            print('there are multiple instances of start/stop codon')
+            print('the translation split at the points of start and stop codons will be:')
+            for i in translation.split('M'):
+                for j in i.split('0'):
+                    print(j)
+        # for weird cases of more than 1 start/stop codon, we just print by splitting at both stop and start codon
         break
     else: 
         print('\nThis is not a valid RNA sequence\n')
@@ -87,7 +95,7 @@ try:
     x = float(input('enter a number: ')) # input
     print('the square root is %.3f'%(x**0.5)) # printing the square root
 except:
-    print('the given number is less than 0') # in case Try code block doesn't run without error
+    print('the given number is either not a number or is a number but below 0') # in case Try code block doesn't run without error
 
 print('Done') 
 
